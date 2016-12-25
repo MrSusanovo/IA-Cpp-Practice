@@ -4,14 +4,9 @@
 #include <vector>
 
 class MergeSort{
-  void sort(std::vector<int> &v,int start,int end);
-  void sort(int *a,int start, int end);
-  void merge(std::vector<int> &v,
-	     int start,int mid,
-	     int mid1,int end);
-  void merge(int *a,int start,int mid,int end);
+  void sort(std::vector<int> &,int,int);
+  void merge(std::vector<int> &,int,int,int,int);
  public:
-  void mergeSort(std::vector<int> &v);
-  void mergeSort(int *a);
-}
+  void mergeSort(std::vector<int> &);
+};
 #endif
